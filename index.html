@@ -1,214 +1,331 @@
 <!DOCTYPE html>
+<html>
 <!-- @falvojr: Reference article https://www.w3schools.com/howto/howto_website_create_resume.asp -->
 <!-- @falvojr: Useful link to use fontawesome (fa) icons: https://fontawesome.com/v4/icons/ -->
 
-<!-- <div class="w3-light-grey w3-round-xlarge w3-small">
-  <div class="w3-container w3-center w3-round-xlarge w3-cyan" style="width:100%">100%</div>
-</div> -->
-<html>
-  <head>
-    <title>Lucas Gomes Leria Resume</title>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <title>Lucas Gomes Leria Resume</title>
 
-    <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-    </style>
-    
-  </head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body class="w3-light-grey" cz-shortcut-listen="true">
-  
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-  
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-  
-        <!-- Left Column -->
-        <div class="w3-third">
-  
-          <div class="w3-white w3-text-grey w3-card-4">
-            <!-- @falvojr: This container has been modified to not use a profile picture. -->
-            <div class="w3-container">
-              <h2>Lucas Gomes Leria</h2>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif
+    }
+
+    .dark-mode {
+      background-color: #333 !important;
+      color: #ddd !important;
+    }
+
+    .dark-mode .w3-card,
+    .dark-mode .w3-white {
+      background-color: #444 !important;
+      color: #ddd !important;
+    }
+
+    .dark-mode .w3-light-grey {
+      background-color: #555 !important;
+    }
+
+    .dark-mode footer {
+      background-color: #222 !important;
+      color: #ddd !important;
+    }
+
+    #google_translate_element {
+      width: 150px;
+      margin-top: 10px;
+    }
+
+    #google_translate_element select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      color: #333;
+      border-radius: 4px;
+      margin-top: 0px;
+    }
+
+    #modeToggleBtn {
+      margin-top: -30px;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+
+<body class="w3-light-grey" cz-shortcut-listen="true">
+
+  <!-- Toggle Button -->
+  <div class="w3-container w3-padding-16 w3-center">
+    <div id="google_translate_element" class="w3-dropdown-hover w3-cyan w3-round"></div>
+    <button id="modeToggleBtn" onclick="toggleDarkMode()" class="w3-button w3-cyan w3-round"
+      style="margin-left: 10px;">Dark Mode</button>
+  </div>
+
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+      <!-- Left Column -->
+      <div class="w3-third">
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-container">
+            <h2>Lucas Gomes Leria</h2>
+            <h5><b><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>IT
+                Technician</b></h5>
+            <div class="w3-margin-bottom">
+              <img src="https://avatars.githubusercontent.com/u/128545102?v=4" alt="Foto de Lucas Gomes Leria"
+                style="width:100%; max-width:200px; border-radius: 50%; border-color: grey; border-style: solid;">
             </div>
-            <div class="w3-container"> <!-- Colocar foto de perfil por aqui -->
-              <p><i class="fa fa-street-view fa-fw w3-margin-right w3-large w3-text-cyan"></i>Brazil - São Paulo</p>
-              <p><i class="fa fa-calendar-o fa-fw w3-margin-right w3-large w3-text-cyan"></i>01/07/2005</p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-cyan"></i>lucasleria17@gmail.com</p>
-              <p><i class="fa fa fa-mobile fa-fw w3-margin-right w3-large w3-text-cyan"></i>+55 11 94573-5280</p>
-              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-cyan"></i>2408-7814</p> 
-              <hr>
-  
-              <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-cyan"></i>Soft-Skills</b></p>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-street-view fa-fw w3-margin-right w3-large w3-text-cyan"></i>Brazil - São Paulo</p>
+            <p><i class="fa fa-calendar-o fa-fw w3-margin-right w3-large w3-text-cyan"></i>01/07/2005</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-cyan"></i>lucasleria17@gmail.com</p>
+            <p><i class="fa fa fa-mobile fa-fw w3-margin-right w3-large w3-text-cyan"></i>+55 11 94573-5280</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-cyan"></i>2408-7814</p>
+            <hr>
 
-                <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Empathy</p>
-                <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Problem-Solving</p>
-                <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Time Management</p>
-                <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Creativity</p>
-                <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Team Work</p>
-                <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Public Speaking</p>
-               
-              <hr>
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-cyan"></i>Soft-Skills</b></p>
+
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Empathy</p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Problem-Solving
+            </p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Time Management
+            </p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Creativity</p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Team Work</p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Public Speaking
+            </p>
+
+            <hr>
 
             <p class="w3-large"><b><i class="fa fa-bandcamp fa-fw w3-margin-right w3-text-cyan"></i>Hard-Skills</b></p>
-              
-              <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>IT Technician</p>
-              <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Database</p>
-              <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Coding</p>
-              <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Data Science</p>
-              <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>UX Design</p>
-              <!-- <p>Certifications & Licenses</p> -->
-              <hr>
-  
-              <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-cyan"></i>Languages</b></p>
-              <p>Portuguese - Native</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
-              </div>
-              <p>English - B2 Level CEFR</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:90%"></div>
-              </div>
-              <p>Latin American Spanish - No academic background</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:45%"></div>
-              </div>
-              <br>
-            </div>
-          </div><br>
-  
-          <!-- End Left Column -->
-        </div>
-  
-        <!-- Right Column -->
-        <div class="w3-twothird">
-    
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>About</h2>
-            <p>I am 19 years old. I'm studying Database.
-              <br>
-              <br>
-              I love technology and I am very curious at learning, especially in development. 
-              <br>
-              <br>
-              Intermediate-advanced knowledge in: <br>
-              •  Programming languages: Python. <br>
-              •  Libraries: PysimpleGUI. <br>
-              •  Markup language: Markdown. <br>
-              •  Relational Database: Sqlite3, MySQL. <br>
-              •  CRM: HubSpot. <br>
-              •  Other: Github, Figma, Canva. <br>
-              <br>
-              <br>
-              Basic-intermediate knowledge in: <br>
-              •  Programming languages: Java, Javascript. <br>
-              •  Markup/styling languages: Html, Css. <br>
-              •  Relational Database: PostgreSQL. <br>
-              •  Non-relational databases: MongoDB. <br>
-              •  Frameworks: Django, jQuery, Bootstrap, Handlebars. <br>
-              •  Libraries: React. <br> 
-              •  Other: Git. <br>
-              <br>
-              <br>
-              Familiarized with: <br>
-              •  Programming languages: Php, R. <br>
-              •  Tecnologies: Nodejs. <br>
-              •  Frameworks: Tailwind, Passportjs. <br>
-              •  CRM: Rubeus. <br>
-          </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Work Experience</h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Client Management - CLA</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span class="w3-tag w3-cyan w3-round">Current</span></h6>
-              <p>Responsible for managing clients, keeping them informed. Multi-functional work.</p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>CRM Analyst Internship - OverStack</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Fev 2023</h6>
-              <p>Responsible for managing and maintaining Hubspot and Rubeus CRMs providing outsourced services to ENIAC.
-                outsourced to ENIAC.</p>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Full-stack Developer Internship - OverStack</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Fev 2023</h6>
-              <p>Responsible for developing, nurturing and maintaining Landing pages providing services
-                outsourced to ENIAC.</p><br>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Copywriter Marketing Professional Practice - ENIAC</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fev 2021 - Dez 2021</h6>
-              <p>Responsible for writing marketing texts for Landing Pages for ENIAC, through the Núcleo
-                AudioVisual ENIAC (NAVE).</p><br>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Professional Practice - ENIAC</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Jan 2021</h6>
-              <p>Responsible in Html5 and Css markup language and People management and also people management.</p><br>
-            </div>
-          </div>
-  
-          <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16"><i
-                class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Education</h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Estácio de Sá University</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span class="w3-tag w3-cyan w3-round">Current</span></h6>
-              <p> Database College, ends Jun 2025 </p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>ENIAC</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Dez 2022</h6>
-              <p>High School Integrated to IT Technician</p>
-              <hr>
-            </div>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>IT Technician
+            </p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Database</p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Coding</p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Data Science
+            </p>
+            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>UX Design</p>
+            <hr>
 
-<!--           <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16"><i
-                class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Other Courses</h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Estácio de Sá University</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span class="w3-tag w3-cyan w3-round">Current</span></h6>
-              <p> Database College, ends Jun 2025 </p>
-              <hr>
+            <p class="w3-large w3-text-theme"><b><i
+                  class="fa fa-globe fa-fw w3-margin-right w3-text-cyan"></i>Languages</b></p>
+            <p>Portuguese - Native</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
             </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>ENIAC</b></h5>
-              <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Dez 2022</h6>
-              <p>High School Integrated to IT Technician</p>
-              <hr>
-            </div> -->
-  
-          <!-- End Right Column -->
+            <p>English - B2 Level CEFR</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-cyan" style="height:24px;width:90%"></div>
+            </div>
+            <p>Latin American Spanish - No academic background</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-cyan" style="height:24px;width:45%"></div>
+            </div>
+            <br>
+          </div>
         </div>
-  
-        <!-- End Grid -->
+        <br>
       </div>
-  
-      <!-- End Page Container -->
+
+      <!-- Center Column -->
+      <div class="w3-third">
+        <div class="w3-container w3-card w3-white w3-margin-bottom w3-text-grey">
+          <h2 class=" w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>About
+            Me
+          </h2>
+          <p>I am 19 years old. I'm currently studying Database.
+            <br>
+            I love technology and I am very curious at learning, especially in development.
+            <br>
+          <p class="w3-large"><b>Intermediate-advanced knowledge</b></p>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Programming
+          languages: Python. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Libraries:
+          PysimpleGUI. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Markup language:
+          Html, Markdown. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Styling languages:
+          Css. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Relational Database:
+          Sqlite3, MySQL. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>CRM: HubSpot. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Other: Github,
+          Figma, Canva, CRUD.
+
+          <p class="w3-large"><b>Basic-intermediate knowledge</b></p>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Programming
+          languages: Java, Javascript. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Relational Database:
+          PostgreSQL. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Non-relational
+          databases: MongoDB. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Frameworks: Django,
+          jQuery, Bootstrap, Handlebars. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Libraries: React.
+          <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Other: Git, UML,
+          SOLID.
+
+          <p class="w3-large"><b>Familiarized with</b></p>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Programming
+          languages: Php, R. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Tecnologies: Nodejs.
+          <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Frameworks:
+          Tailwind, Passportjs. <br>
+          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>CRM: Rubeus.
+          <br><br>
+        </div>
+
+        <div class="w3-container w3-card w3-white w3-text-grey w3-margin-bottom">
+          <h2 class="w3-padding-16"><i
+              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Certifications
+          </h2>
+          <div class="w3-container">
+            <h5><b>The complete database and SQL course, with no mysteries | Udemy</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2024 - <span
+                class="w3-tag w3-cyan w3-round">Current</span></h6>
+            <p> 58h course - Professor Felipe Mafra. <br>
+              Certification Code: Soon</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5><b>Data Science | DIO</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2023</h6>
+            <p> 80h course - Powered by Ifood. <br>
+              Certification Code: AFDC8DC6 </p>
+          </div>
+          <div class="w3-container">
+            <h5><b>Cloud Computing | KaSolution</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-bottom"></i>Mai 2023</h6>
+            <p> 4h course - Powered by AWS. <br>
+              Certification Code: 03750-67718</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-third">
+        <div class="w3-container w3-card-4 w3-white w3-margin-bottom w3-text-grey">
+          <h2 class=" w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Work
+            Experience
+          </h2>
+          <div class="w3-container">
+            <h5><b>Client Management | CLA</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span
+                class="w3-tag w3-cyan w3-round">Current</span></h6>
+            <p>Responsible for managing clients, keeping them informed. Multi-functional work.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5><b>CRM Analyst Internship | OverStack</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Fev 2023
+            </h6>
+            <p>Responsible for managing and maintaining Hubspot and Rubeus CRMs providing outsourced
+              services to ENIAC.</p> <br>
+          </div>
+          <div class="w3-container">
+            <h5><b>Front-End Developer Internship | OverStack</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Fev 2023
+            </h6>
+            <p>Responsible for developing, nurturing and maintaining Landing pages providing services
+              outsourced to ENIAC.</p><br>
+          </div>
+          <div class="w3-container">
+            <h5><b>Copywriter Marketing Professional Practice | ENIAC</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fev 2021 - Dez 2021
+            </h6>
+            <p>Responsible for writing marketing texts for Landing Pages for ENIAC, through the Núcleo
+              AudioVisual ENIAC (NAVE).</p><br>
+          </div>
+          <div class="w3-container">
+            <h5><b>Professional Practice | ENIAC</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Jan 2021
+            </h6>
+            <p>Responsible in Html5 and Css markup languag, People management and also people
+              management.</p><br>
+          </div>
+        </div>
+
+        <div class="w3-container w3-card-4 w3-white w3-text-grey w3-margin-bottom">
+          <h2 class="w3-padding-16"><i
+              class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Education
+          </h2>
+          <div class="w3-container">
+            <h5><b>Database College | UNESA</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span
+                class="w3-tag w3-cyan w3-round">Current</span></h6>
+            <p> Ends Jun 2025.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5><b>High School Integrated to IT Technician | ENIAC</b></h5>
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Dez 2022
+            </h6>
+            <p>Elementary and Middle School I studied in Marconi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Grid -->
     </div>
-  
-    <footer class="w3-container w3-cyan w3-center w3-margin-top">
-      <p>Find me on social media.</p>
-      <a href="https://www.linkedin.com/in/lucasleria"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-      <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
-      <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-      <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-      <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
-      <a href="https://www.github.com/lucasgleria"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target x="_blank">w3.css</a></p> -->
-    </footer>
-  
-  </body>
+
+    <!-- End Page Container -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-cyan w3-center w3-xlarge">
+    <a href="https://www.linkedin.com/in/lucasleria"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <a href="https://www.github.com/lucasgleria"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target x="_blank">w3.css</a></p> -->
+    <p>Find me on social media.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      var body = document.body;
+      var button = document.getElementById("modeToggleBtn");
+      body.classList.toggle("dark-mode");
+      if (body.classList.contains("dark-mode")) {
+        button.textContent = "Light Mode";
+      } else {
+        button.textContent = "Dark Mode";
+      }
+    }
+  </script>
+</body>
 
 </html>
