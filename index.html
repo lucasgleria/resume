@@ -82,6 +82,7 @@
     <div id="google_translate_element" class="w3-dropdown-hover w3-cyan w3-round"></div>
     <button id="modeToggleBtn" onclick="toggleDarkMode()" class="w3-button w3-cyan w3-round"
       style="margin-left: 10px;">Dark Mode</button>
+    <button onclick="generatePDF()" class="w3-button w3-cyan w3-round" style="margin-left: 10px;">Download PDF</button>
   </div>
 
   <!-- Page Container -->
@@ -161,7 +162,7 @@
           <h2 class=" w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>About
             Me
           </h2>
-          <p>I am 19 years old. I'm currently studying Database.
+          <p>I am 20 years old. I'm currently on my last semester on Database university.
             <br>
             I love technology and I am very curious at learning, especially in development.
             <br>
@@ -178,7 +179,7 @@
           Sqlite3, MySQL. <br>
           <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>CRM: HubSpot. <br>
           <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Other: Github,
-          Figma, Canva, CRUD.
+          Figma, Canva, CRUD, ETL.
 
           <p class="w3-large"><b>Basic-intermediate knowledge</b></p>
           <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Programming
@@ -211,7 +212,7 @@
           </h2>
           <div class="w3-container">
             <h5><b>The complete database and SQL course, with no mysteries | Udemy</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2024 - <span
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2025 - <span
                 class="w3-tag w3-cyan w3-round">Current</span></h6>
             <p> 58h course - Professor Felipe Mafra. <br>
               Certification Code: Soon</p>
@@ -248,21 +249,21 @@
           </div>
           <div class="w3-container">
             <h5><b>CRM Analyst Internship | OverStack</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Fev 2023
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Feb 2023
             </h6>
             <p>Responsible for managing and maintaining Hubspot and Rubeus CRMs providing outsourced
               services to ENIAC.</p> <br>
           </div>
           <div class="w3-container">
             <h5><b>Front-End Developer Internship | OverStack</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Fev 2023
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Feb 2023
             </h6>
             <p>Responsible for developing, nurturing and maintaining Landing pages providing services
               outsourced to ENIAC.</p><br>
           </div>
           <div class="w3-container">
             <h5><b>Copywriter Marketing Professional Practice | ENIAC</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fev 2021 - Dez 2021
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 - Dez 2021
             </h6>
             <p>Responsible for writing marketing texts for Landing Pages for ENIAC, through the Núcleo
               AudioVisual ENIAC (NAVE).</p><br>
@@ -314,6 +315,8 @@
     <p>Find me on social media.</p>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
   <script>
     function toggleDarkMode() {
       var body = document.body;
@@ -325,7 +328,28 @@
         button.textContent = "Dark Mode";
       }
     }
+
+    function generatePDF() {
+    const element = document.body.cloneNode(true); // Clona o conteúdo para evitar alterações diretas
+    element.querySelector("footer").style.display = "none"; // Opcional: remover o footer
+    element.querySelector("#google_translate_element").style.display = "none"; // Remove o tradutor
+    element.querySelector("#modeToggleBtn").style.display = "none"; // Remove o botão de modo escuro
+
+    const opt = {
+      margin:       0,
+      filename:     'Lucas_Gomes_Leria_Resume.pdf',
+      image:        { type: 'jpeg', quality: 0.98 },
+      html2canvas:  { scale: 2, useCORS: true },
+      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' },
+      pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+    };
+
+    html2pdf().set(opt).from(element).save();
+  }
   </script>
+
+  
+
 </body>
 
 </html>
