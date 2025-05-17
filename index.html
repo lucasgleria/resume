@@ -25,6 +25,12 @@
       font-family: "Roboto", sans-serif
     }
 
+    body {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    }
+
     .dark-mode {
       background-color: #333 !important;
       color: #ddd !important;
@@ -45,6 +51,11 @@
       color: #ddd !important;
     }
 
+    .w3-row-padding, .w3-card, .w3-container {
+    page-break-inside: avoid;
+    break-inside: avoid;
+   }
+
     #google_translate_element {
       width: 150px;
       margin-top: 10px;
@@ -62,6 +73,16 @@
     #modeToggleBtn {
       margin-top: -30px;
     }
+
+     @media print {
+    html, body {
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
   </style>
 
   <script type="text/javascript">
@@ -315,7 +336,9 @@
     <p>Find me on social media.</p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
 
   <script>
     function toggleDarkMode() {
@@ -330,18 +353,25 @@
     }
 
     function generatePDF() {
-    const element = document.body.cloneNode(true); // Clona o conteúdo para evitar alterações diretas
-    element.querySelector("footer").style.display = "none"; // Opcional: remover o footer
-    element.querySelector("#google_translate_element").style.display = "none"; // Remove o tradutor
-    element.querySelector("#modeToggleBtn").style.display = "none"; // Remove o botão de modo escuro
-
+    const element = document.body; // Pode ser ajustado para capturar uma div específica se quiser
     const opt = {
       margin:       0,
       filename:     'Lucas_Gomes_Leria_Resume.pdf',
       image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  { scale: 2, useCORS: true },
-      jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' },
-      pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+      html2canvas:  {
+        scale: 2, 
+        useCORS: true,
+        allowTaint: true,
+        scrollY: 0,
+        windowWidth: document.body.scrollWidth,
+        windowHeight: document.body.scrollHeight,
+      },
+      jsPDF:        {
+        unit: 'pt',
+        format: 'a4',
+        orientation: 'portrait'
+      },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
     };
 
     html2pdf().set(opt).from(element).save();
