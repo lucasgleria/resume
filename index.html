@@ -25,12 +25,6 @@
       font-family: "Roboto", sans-serif
     }
 
-    body {
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-    }
-
     .dark-mode {
       background-color: #333 !important;
       color: #ddd !important;
@@ -51,11 +45,6 @@
       color: #ddd !important;
     }
 
-    .w3-row-padding, .w3-card, .w3-container {
-    page-break-inside: avoid;
-    break-inside: avoid;
-   }
-
     #google_translate_element {
       width: 150px;
       margin-top: 10px;
@@ -73,16 +62,6 @@
     #modeToggleBtn {
       margin-top: -30px;
     }
-
-     @media print {
-    html, body {
-      width: 210mm;
-      height: 297mm;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-  }
   </style>
 
   <script type="text/javascript">
@@ -103,7 +82,6 @@
     <div id="google_translate_element" class="w3-dropdown-hover w3-cyan w3-round"></div>
     <button id="modeToggleBtn" onclick="toggleDarkMode()" class="w3-button w3-cyan w3-round"
       style="margin-left: 10px;">Dark Mode</button>
-    <button onclick="generatePDF()" class="w3-button w3-cyan w3-round" style="margin-left: 10px;">Download PDF</button>
   </div>
 
   <!-- Page Container -->
@@ -183,7 +161,7 @@
           <h2 class=" w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>About
             Me
           </h2>
-          <p>I am 20 years old. I'm currently on my last semester on Database university.
+          <p>I am 19 years old. I'm currently studying Database.
             <br>
             I love technology and I am very curious at learning, especially in development.
             <br>
@@ -200,7 +178,7 @@
           Sqlite3, MySQL. <br>
           <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>CRM: HubSpot. <br>
           <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Other: Github,
-          Figma, Canva, CRUD, ETL.
+          Figma, Canva, CRUD.
 
           <p class="w3-large"><b>Basic-intermediate knowledge</b></p>
           <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Programming
@@ -233,7 +211,7 @@
           </h2>
           <div class="w3-container">
             <h5><b>The complete database and SQL course, with no mysteries | Udemy</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2025 - <span
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2024 - <span
                 class="w3-tag w3-cyan w3-round">Current</span></h6>
             <p> 58h course - Professor Felipe Mafra. <br>
               Certification Code: Soon</p>
@@ -270,21 +248,21 @@
           </div>
           <div class="w3-container">
             <h5><b>CRM Analyst Internship | OverStack</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Feb 2023
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Fev 2023
             </h6>
             <p>Responsible for managing and maintaining Hubspot and Rubeus CRMs providing outsourced
               services to ENIAC.</p> <br>
           </div>
           <div class="w3-container">
             <h5><b>Front-End Developer Internship | OverStack</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Feb 2023
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ago 2022 - Fev 2023
             </h6>
             <p>Responsible for developing, nurturing and maintaining Landing pages providing services
               outsourced to ENIAC.</p><br>
           </div>
           <div class="w3-container">
             <h5><b>Copywriter Marketing Professional Practice | ENIAC</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 - Dez 2021
+            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fev 2021 - Dez 2021
             </h6>
             <p>Responsible for writing marketing texts for Landing Pages for ENIAC, through the Núcleo
               AudioVisual ENIAC (NAVE).</p><br>
@@ -336,10 +314,6 @@
     <p>Find me on social media.</p>
   </footer>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-
-
   <script>
     function toggleDarkMode() {
       var body = document.body;
@@ -351,35 +325,7 @@
         button.textContent = "Dark Mode";
       }
     }
-
-    function generatePDF() {
-    const element = document.body; // Pode ser ajustado para capturar uma div específica se quiser
-    const opt = {
-      margin:       0,
-      filename:     'Lucas_Gomes_Leria_Resume.pdf',
-      image:        { type: 'jpeg', quality: 0.98 },
-      html2canvas:  {
-        scale: 2, 
-        useCORS: true,
-        allowTaint: true,
-        scrollY: 0,
-        windowWidth: document.body.scrollWidth,
-        windowHeight: document.body.scrollHeight,
-      },
-      jsPDF:        {
-        unit: 'pt',
-        format: 'a4',
-        orientation: 'portrait'
-      },
-      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
-    };
-
-    html2pdf().set(opt).from(element).save();
-  }
   </script>
-
-  
-
 </body>
 
 </html>
