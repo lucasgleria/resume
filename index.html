@@ -1,329 +1,314 @@
 <!DOCTYPE html>
-<html>
-<!-- @falvojr: Reference article https://www.w3schools.com/howto/howto_website_create_resume.asp -->
-<!-- @falvojr: Useful link to use fontawesome (fa) icons: https://fontawesome.com/v4/icons/ -->
-
+<html lang="pt-BR">
 <head>
-  <title>Lucas Gomes Leria Resume</title>
-
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Roboto", sans-serif
-    }
-
-    .dark-mode {
-      background-color: #333 !important;
-      color: #ddd !important;
-    }
-
-    .dark-mode .w3-card,
-    .dark-mode .w3-white {
-      background-color: #444 !important;
-      color: #ddd !important;
-    }
-
-    .dark-mode .w3-light-grey {
-      background-color: #555 !important;
-    }
-
-    .dark-mode footer {
-      background-color: #222 !important;
-      color: #ddd !important;
-    }
-
-    #google_translate_element {
-      width: 150px;
-      margin-top: 10px;
-    }
-
-    #google_translate_element select {
-      width: 100%;
-      padding: 5px;
-      border: 1px solid #ccc;
-      color: #333;
-      border-radius: 4px;
-      margin-top: 0px;
-    }
-
-    #modeToggleBtn {
-      margin-top: -30px;
-    }
-  </style>
-
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    }
-  </script>
-
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Gomes Leria - Currículo Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; 
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
 </head>
+<body class="antialiased">
 
-<body class="w3-light-grey" cz-shortcut-listen="true">
+    <div class="container mx-auto p-4 md:p-8 lg:p-12 max-w-6xl">
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden p-6 md:p-8">
 
-  <!-- Toggle Button -->
-  <div class="w3-container w3-padding-16 w3-center">
-    <div id="google_translate_element" class="w3-dropdown-hover w3-cyan w3-round"></div>
-    <button id="modeToggleBtn" onclick="toggleDarkMode()" class="w3-button w3-cyan w3-round"
-      style="margin-left: 10px;">Dark Mode</button>
-  </div>
-
-  <!-- Page Container -->
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-      <!-- Left Column -->
-      <div class="w3-third">
-        <div class="w3-white w3-text-grey w3-card-4">
-          <div class="w3-container">
-            <h2>Lucas Gomes Leria</h2>
-            <h5><b><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>IT
-                Technician - Database Student</b></h5>
-            <div class="w3-margin-bottom">
-              <img src="https://avatars.githubusercontent.com/u/128545102?v=4" alt="Foto de Lucas Gomes Leria"
-                style="width:100%; max-width:200px; border-radius: 50%; border-style: solid;" class="w3-text-cyan">
+            <div class="relative flex flex-col items-center text-center mb-8 pt-16 pb-8 rounded-lg overflow-hidden">
+                <div class="absolute inset-x-0 top-0 h-32 bg-cyan-100 dark:bg-cyan-700"></div>
+                <img src="https://avatars.githubusercontent.com/u/128545102?v=4" alt="Foto de Lucas Gomes Leria"
+                    class="relative z-10 w-32 h-32 rounded-full border-4 border-cyan-500 shadow-md mb-4 object-cover">
+                <h1 class="text-4xl font-extrabold text-gray-800">Lucas Gomes Leria</h1>
+                <p class="text-xl text-gray-600 font-semibold mt-1">Técnico em TI - Estudante de Banco de Dados</p>
+                <div class="flex flex-wrap justify-center items-center text-gray-700 mt-4 space-x-4 md:space-x-8">
+                    <span class="flex items-center"><i class="fas fa-envelope text-cyan-500 mr-2"></i>lucasleria17@gmail.com</span>
+                    <span class="flex items-center"><i class="fas fa-mobile-alt text-cyan-500 mr-2"></i>+55 11 94573-5280</span>
+                    <span class="flex items-center"><i class="fab fa-linkedin text-cyan-500 mr-2"></i><a href="https://www.linkedin.com/in/lucasleria" target="_blank" class="hover:underline">linkedin.com/in/lucasleria</a></span>
+                    <span class="flex items-center"><i class="fab fa-github text-cyan-500 mr-2"></i><a href="https://www.github.com/lucasgleria" target="_blank" class="hover:underline">github.com/lucasgleria</a></span>
+                    </div>
             </div>
-          </div>
-          <div class="w3-container">
-            <p><i class="fa fa-street-view fa-fw w3-margin-right w3-large w3-text-cyan"></i>Brazil - São Paulo</p>
-            <p><i class="fa fa-calendar-o fa-fw w3-margin-right w3-large w3-text-cyan"></i>01/07/2005</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-cyan"></i>lucasleria17@gmail.com</p>
-            <p><i class="fa fa fa-mobile fa-fw w3-margin-right w3-large w3-text-cyan"></i>+55 11 94573-5280</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-cyan"></i>2408-7814</p>
-            <hr>
 
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-cyan"></i>Soft-Skills</b></p>
-
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Empathy</p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Problem-Solving
-            </p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Time Management
-            </p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Creativity</p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Team Work</p>
-            <!-- <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Public Speaking -->
-            </p>
-
-            <hr>
-
-            <p class="w3-large"><b><i class="fa fa-bandcamp fa-fw w3-margin-right w3-text-cyan"></i>Hard-Skills</b></p>
-
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>IT Technician
-            </p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Database</p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Coding</p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Data Science</p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>UX Design</p>
-            <p><i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>AI</p>
-            <hr>
-
-            <p class="w3-large w3-text-theme"><b><i
-                  class="fa fa-globe fa-fw w3-margin-right w3-text-cyan"></i>Languages</b></p>
-            <p>Portuguese - Native</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8">
+                <h2 class="text-2xl font-semibold text-gray-700 mb-4 flex items-center">
+                    <i class="fas fa-bullseye text-cyan-500 mr-3"></i>Objetivo Profissional
+                </h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Profissional com forte interesse em Data Science e Análise de Dados, e formação em Banco de Dados, complementada por experiência como Técnico em TI. Com uma sólida base em Python e SQL, estou pronto para desenvolver e implementar modelos de Machine Learning, explorar soluções de Inteligência Artificial (IA), e otimizar data pipelines e processos de ETL visando impulsionar a tomada de decisões estratégicas.  Minha proatividade, aliada a uma contínua busca por desafios e foco na execução, assegura aprendizado constante e a entrega de contribuições mensuráveis para a inovação e o sucesso de equipes orientadas por dados.
+                </p>
             </div>
-            <p>English - C1 Level CEFR</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-cyan" style="height:24px;width:95%"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="md:col-span-1 space-y-6">
+
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fas fa-cogs text-cyan-500 mr-3"></i>Habilidades Técnicas
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-2">Análise de Dados & BI</h4>
+                                <ul class="list-disc list-inside text-gray-700 ml-4">
+                                    <li>SQL (Sqlite3, MySQL, PostgreSQL, MongoDB, Neo4j)</li>
+                                    <li>Python (Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn)</li>
+                                    <li>Data Science, ETL / Data Pipelines</li>
+                                    <li>Power BI</li>
+                                    </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-2">Inteligência Artificial & Machine Learning</h4>
+                                <ul class="list-disc list-inside text-gray-700 ml-4">
+                                    <li>Algoritmos de ML (Regressão, Classificação)</li>
+                                    <li>Deep Learning (TensorFlow, Keras, EasyOCR, Tesseract. Mediapipe)</li>
+                                    <li>NLP (Processamento de Linguagem Natural)</li>
+                                    <li>Computer Vision (Visão Computacional)</li>
+                                    <li>MLOps (Docker)</li>
+                                    </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-2">Desenvolvimento & Ferramentas Adicionais</h4>
+                                <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                                    <li>Linguagens (Python, HTML, CSS, JavaScript, Java, PHP, R, Markdown) </li>
+                                    <li>Versionamento (Git, GitHub, Node.js) </li>
+                                    <li>Frameworks Web & APIs (Django, Flask, FastAPI, jQuery, Bootstrap, Tailwind, Handlebars) </li>
+                                    <li>Metodologias & Conceitos (SCRUM, CRUD, MVC, UML, SOLID)</li>
+                                    <li>UX Design (Figma, Canva)</li>
+                                    <li>CRM (HubSpot, Rubeus)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fas fa-project-diagram text-cyan-500 mr-3"></i>Projetos Relevantes
+                        </h2>
+                                <a href="https://github.com/lucasgleria/LibraVoice/tree/main" class="text-cyan-600 hover:underline">
+                                Laboratório de Extensão em Metodologias Ágeis e SCRUM com LSTM - LibraVoice:</a> Software de reconhecimento e tradução de Libras para linguagem natural. <br>
+                                <strong>Tecnologias:</strong> Python, TensorFlow, Mediapipe, Numpy, OpenCV. <br>
+                                <strong>Resultado/Impacto:</strong> Software funcional e acessível para auxílio na comunicação de usuários PCD. <br>
+                                
+                                <hr class="border-gray-200 mt-4 mb-4">
+
+                                <a href="https://github.com/lucasgleria/lleria-mednizer" class="text-cyan-600 hover:underline">
+                                Colaboração acadêmica para IFSP-GRU R.A.G.E. com Visão Computacional - lleria-medinizer:</a> CRUD GUI voltado para área farmacológica, com integração de LSTM.<br>
+                                <strong>Tecnologias:</strong> Python, EasyOCR, Tesseract, OpenCV, NLTK, Sqlite3, PysimpleGUI. <br>
+                                <strong>Resultado/Impacto:</strong> A entrega final do programa funcional favoreceu a equipe rendendo aprovação nota máxima.<br>
+                            
+                                <hr class="border-gray-200 mt-4 mb-4">
+
+                                <a href="https://github.com/lucasgleria/over-chat" class="text-cyan-600 hover:underline">
+                                Trabalho de Conclusão de Módulo Desenvolvimento Web - OverChat:</a> Aplicação réplica da rede social <a href="https://x.com/" class="text-cyan-600 hover:underline">X</a> voltado para comunicação empresarial.<br>
+                                <strong>Tecnologias:</strong> Html, Css, Javascript, Vercel, Prisma. <br>
+                                <strong>Resultado/Impacto:</strong> Rede social empresarial.<br>
+                            
+                                <hr class="border-gray-200 mt-4 mb-4">
+
+                                <a href="https://github.com/lucasgleria/FlappyZap" class="text-cyan-600 hover:underline">
+                                Paródia do jogo Flappy Bird - FlappyZap:</a> Vídeo game customizado com ícone do <a href="http://www.whatsapp.com/" class="text-cyan-600 hover:underline">WhatsApp</a><br>
+                                <strong>Tecnologias:</strong> Python, Pygame. <br>
+                                <strong>Resultado/Impacto:</strong> Projeto pessoal voltado para aprimorar habilidades na linguagem python.<br>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 space-y-6">
+
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fas fa-briefcase text-cyan-500 mr-3"></i>Experiência Profissional
+                        </h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Gerenciamento de Clientes | CLA</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Mar 2023 - <span class="bg-cyan-500 text-white text-xs px-2 py-0.5 rounded-full ml-1">Atual</span>
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 mt-2 ml-4 space-y-1">
+                                    <li>Responsável pelo gerenciamento de clientes e documentos, atuando em diversas funções.</li>
+                                    </ul>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Estágio em Análise de CRM | OverStack</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Ago 2022 - Fev 2023
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 mt-2 ml-4 space-y-1">
+                                    <li>Gerenciamento e manutenção dos CRMs Hubspot e Rubeus.</li>
+                                    </ul>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Estágio em Desenvolvimento Front-End | OverStack</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Ago 2022 - Fev 2023
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 mt-2 ml-4 space-y-1">
+                                    <li>Desenvolvimento, nutrição e manutenção de Landing Pages.</li>
+                                    </ul>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Prática Profissional de Marketing Copywriter | ENIAC</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Fev 2021 - Dez 2021
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 mt-2 ml-4 space-y-1">
+                                    <li>Redação de textos de marketing para Landing Pages, através do Núcleo Audiovisual ENIAC (NAVE).</li>
+                                    </ul>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Prática Profissional | ENIAC</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Jan 2020 - Jan 2021
+                                </p>
+                                <ul class="list-disc list-inside text-gray-700 mt-2 ml-4 space-y-1">
+                                    <li>Experiência com linguagem de marcação Html5 e Css.</li>
+                                    <li>Participação em atividades de gerenciamento de pessoas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fas fa-graduation-cap text-cyan-500 mr-3"></i>Formação Acadêmica
+                        </h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Graduação em Banco de Dados | UNESA</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Mar 2023 - Jun 2025.
+                                </p>
+                                <p class="text-gray-700 mt-2"></p>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Ensino Médio Integrado ao Técnico em TI | ENIAC</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Jan 2020 - Dez 2022
+                                </p>
+                                <p class="text-gray-700 mt-2">Ensino fundamental I e II cursados na escola Marconi.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h2 class="text-2xl font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fas fa-certificate text-cyan-500 mr-3"></i>Certificações
+                        </h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">The complete database and SQL course, without mysteries | Udemy</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Mar 2025 - <span class="bg-cyan-500 text-white text-xs px-2 py-0.5 rounded-full ml-1">Atual</span>
+                                </p>
+                                <p class="text-gray-700 mt-2">
+                                    Curso de 58h - Professor Felipe Mafra. <br>
+                                    Código de Certificação: Em breve
+                                </p>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Data Science | DIO</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Ago 2023
+                                </p>
+                                <p class="text-gray-700 mt-2">
+                                    Curso de 80h - Powered by Ifood. <br>
+                                    Código de Certificação: AFDC8DC6
+                                </p>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h3 class="text-xl font-medium text-gray-800">Cloud Computing | KaSolution</h3>
+                                <p class="text-gray-600 flex items-center mt-1">
+                                    <i class="fas fa-calendar-alt text-cyan-500 mr-2"></i>Mai 2023
+                                </p>
+                                <p class="text-gray-700 mt-2">
+                                    Curso de 4h - Powered by AWS. <br>
+                                    Código de Certificação: 03750-67718
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fas fa-users text-cyan-500 mr-3"></i>Soft Skills
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
+                            <li>Empatia</li>
+                            <li>Proatividade</li>
+                            <li>Criatividade e Inovação</li>
+                            <li>Resolução de Problemas Complexos</li>
+                            <li>Trabalho em Equipe e Colaboração</li>
+                            <li>Gerenciamento de Tempo e Priorização</li>
+                            </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4 flex items-center">
+                            <i class="fas fa-globe text-cyan-500 mr-3"></i>Idiomas
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-gray-700">Português - Nativo</p>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-cyan-500 h-2.5 rounded-full" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-gray-700">Inglês - Nível C1 CEFR</p>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-cyan-500 h-2.5 rounded-full" style="width: 97%;"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-gray-700">Espanhol Latino-Americano - Sem formação acadêmica</p>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-cyan-500 h-2.5 rounded-full" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <p>Latin American Spanish - No academic background</p>
-            <div class="w3-light-grey w3-round-xlarge">
-              <div class="w3-round-xlarge w3-cyan" style="height:24px;width:45%"></div>
-            </div>
-            <br>
-          </div>
         </div>
-        <br>
-      </div>
-
-      <!-- Center Column -->
-      <div class="w3-third">
-        <div class="w3-container w3-card w3-white w3-margin-bottom w3-text-grey">
-          <h2 class=" w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>About
-            Me
-          </h2>
-          <p>I am 20 years old. I'm currently studying Database.
-            <br>
-            I love technology and I am very curious at learning, especially in development.
-            <br>
-          <p class="w3-large"><b>Intermediate-advanced knowledge</b></p>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Programming
-          languages: Python. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Libraries:
-          Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Markup language:
-          Html, Markdown. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Styling languages:
-          Css. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Databases:
-          Sqlite3, MySQL. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>CRM: HubSpot. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Other: Git, Github,
-          Figma, Canva, CRUD.
-
-          <p class="w3-large"><b>Basic-intermediate knowledge</b></p>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Programming
-          languages: Java, Javascript. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Databases:
-          PostgreSQL, MongoDB, Neo4j. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Frameworks: Django, Flask,
-          jQuery, Bootstrap, Handlebars. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Libraries: Tensorflow, Pytesseract, React.
-          <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Other: UML,
-          SOLID.
-
-          <p class="w3-large"><b>Familiarized with</b></p>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Programming
-          languages: Php, R. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Tecnologies: Nodejs, Docker, Rubeus.
-          <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Frameworks:
-          Tailwind, Passportjs, FastAPI. <br>
-          <i class="fa fa-circle fa-fw w3-margin-right w3-tiny w3-text-cyan" aria-hidden="true"></i>Libraries: Keras, PyJWT.
-          <br><br>
-        </div>
-
-        <div class="w3-container w3-card w3-white w3-text-grey w3-margin-bottom">
-          <h2 class="w3-padding-16"><i
-              class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Certifications
-          </h2>
-          <div class="w3-container">
-            <h5><b>The complete database and SQL course, without mysteries | Udemy</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2025 - <span
-                class="w3-tag w3-cyan w3-round">Current</span></h6>
-            <p> 58h course - Professor Felipe Mafra. <br>
-              Certification Code: Soon</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5><b>Data Science | DIO</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2023</h6>
-            <p> 80h course - Powered by Ifood. <br>
-              Certification Code: AFDC8DC6 </p>
-          </div>
-          <div class="w3-container">
-            <h5><b>Cloud Computing | KaSolution</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-bottom"></i>May 2023</h6>
-            <p> 4h course - Powered by AWS. <br>
-              Certification Code: 03750-67718</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Right Column -->
-      <div class="w3-third">
-        <div class="w3-container w3-card-4 w3-white w3-margin-bottom w3-text-grey">
-          <h2 class=" w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Work
-            Experience
-          </h2>
-          <div class="w3-container">
-            <h5><b>Client Management | CLA</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span
-                class="w3-tag w3-cyan w3-round">Current</span></h6>
-            <p>Responsible for managing clients and documents. Multi-functional work.</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5><b>CRM Analyst Internship | OverStack</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2022 - Feb 2023
-            </h6>
-            <p>Responsible for managing and maintaining Hubspot and Rubeus CRMs providing outsourced
-              services to ENIAC.</p> <br>
-          </div>
-          <div class="w3-container">
-            <h5><b>Front-End Developer Internship | OverStack</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2022 - Feb 2023
-            </h6>
-            <p>Responsible for developing, nurturing and maintaining Landing pages providing services
-              outsourced to ENIAC.</p><br>
-          </div>
-          <div class="w3-container">
-            <h5><b>Copywriter Marketing Professional Practice | ENIAC</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 - Dec 2021
-            </h6>
-            <p>Responsible for writing marketing texts for Landing Pages for ENIAC, through the Núcleo
-              AudioVisual ENIAC (NAVE).</p><br>
-          </div>
-          <div class="w3-container">
-            <h5><b>Professional Practice | ENIAC</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Jan 2021
-            </h6>
-            <p>Responsible in Html5 and Css markup languag, People management and also people
-              management.</p><br>
-          </div>
-        </div>
-
-        <div class="w3-container w3-card-4 w3-white w3-text-grey w3-margin-bottom">
-          <h2 class="w3-padding-16"><i
-              class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-cyan"></i>Education
-          </h2>
-          <div class="w3-container">
-            <h5><b>Database College | UNESA</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - <span
-                class="w3-tag w3-cyan w3-round">Current</span></h6>
-            <p> Ends Jun 2025.</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5><b>High School Integrated to IT Technician | ENIAC</b></h5>
-            <h6 class="w3-text-cyan"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Dec 2022
-            </h6>
-            <p>Elementary and Middle School I studied in Marconi.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- End Grid -->
     </div>
 
-    <!-- End Page Container -->
-  </div>
+    <footer class="bg-cyan-100 dark:bg-cyan-700 text-white py-8 mt-8 text-center rounded-t-xl">
+        <p class="text-lg mb-4">Encontre-me nas redes sociais:</p>
+        <div class="flex justify-center space-x-6 text-2xl">
+            <a href="https://www.linkedin.com/in/lucasleria" target="_blank" class="hover:text-cyan-400 transition-colors duration-300">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.github.com/lucasgleria" target="_blank" class="hover:text-cyan-400 transition-colors duration-300">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p class="text-sm mt-4 text-gray-400">&copy; 2025 Lucas Gomes Leria. Todos os direitos reservados.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-cyan w3-center w3-xlarge">
-    <a href="https://www.linkedin.com/in/lucasleria"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
-    <a href="https://www.github.com/lucasgleria"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target x="_blank">w3.css</a></p> -->
-    <p>Find me on social media.</p>
-  </footer>
-
-  <script>
-    function toggleDarkMode() {
-      var body = document.body;
-      var button = document.getElementById("modeToggleBtn");
-      body.classList.toggle("dark-mode");
-      if (body.classList.contains("dark-mode")) {
-        button.textContent = "Light Mode";
-      } else {
-        button.textContent = "Dark Mode";
-      }
-    }
-  </script>
 </body>
-
 </html>
